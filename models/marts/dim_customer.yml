@@ -1,0 +1,23 @@
+version: 2
+
+models: 
+  - name: dim_customer 
+    columns:
+      - name: customer_sk
+        description: Chave primária de cliente. 
+        tests:
+          - unique
+          - not_null
+
+      - name: firstname
+        description: Primeiro nome da pessoa.
+
+      - name: middlename
+        description: Nome do meio ou letra inicial do nome do meio da pessoa.
+
+      - name: lastname
+        description: Último nome da pessoa.
+
+
+      - name: businessentityid
+        description: Chave natural para pessoa.
